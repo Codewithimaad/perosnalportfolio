@@ -11,6 +11,7 @@ toggle.addEventListener("click", function () {
     if (this.classList.toggle("fa-solid-fa-brush")) {
         body.style.background = "#491919";
         navbar.style.background = "#491919";
+        navbar.style.transition = "2s";
         education.style.background = "#321010";
         education1.style.background = "#321010";
         education2.style.background = "#321010";
@@ -21,6 +22,7 @@ toggle.addEventListener("click", function () {
     else{
         body.style.background = "#0c1022";
         navbar.style.background = "#0c1022";
+        navbar.style.transition = "2s";
         education.style.background = "#0c1022";
         education1.style.background = "#0c1022";
         education2.style.background = "#0c1022";
