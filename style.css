@@ -19,6 +19,7 @@ body {
     left: 0;
     color: #321010;
     border-bottom: 3px solid #524e4e;
+    Z-index: 100;
     
 }
 
