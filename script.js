@@ -29,4 +29,21 @@ toggle.addEventListener("click", function () {
         education3.style.background = "#0c1022";
         body.style.transition = "2s";
     }
-})
+});
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzkEUxvs8eHyrAVMO6-2G_Ezy_VQjcrWJAn3Zp5YGfXWbLPEOPHEVTfGdpBdlgmGWyCFw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById('msg');
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = 'Message sent successfully'
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
