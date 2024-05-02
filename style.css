@@ -511,6 +511,53 @@ body {
     color: #3cf;
 }
 
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form{
+    width: 50%;
+    margin-top: 50px;
+}
+
+.contact-form h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #182043;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form button{
+    padding: 8px 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f06;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+form button:hover{
+    background: rgb(127, 1, 51);
+}
+
+#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
+
 .question{
     margin-top: 100px;
     text-align: center;
@@ -627,7 +674,9 @@ body {
         .project-img p{
             width: 370px;
         }
-
+     .contact-form{
+            width: 90%;
+        }
         .question h4{
             font-size: 1.3rem;
         }
@@ -681,7 +730,9 @@ body {
     .project-img p{
         width: 340px;
     }
-
+     .contact-form{
+            width: 80%;
+        }
     .education{
         display: flex;
         justify-content: center;
